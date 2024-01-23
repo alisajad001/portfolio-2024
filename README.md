@@ -2,14 +2,14 @@
 
 ## ✨ Description ✨
 
-It's 2024 and It's time to create a brand new portfolio website. I will put my projects and works on this website. This website will be made with pure React and CSS.
+It's 2024 and It's time to create a brand new portfolio website. I will put my projects and works on this website. This website will be made with pure React and Tailwind CSS.
 
 ### Technology used 👨‍💻
 
 - ✅ React JS version 18
 - ✅ React Router
-- ✅ Custom CSS
-- ✅ Custom CSS Animations
+- ✅ Tailwind CSS
+- ✅ Animations
 
 ---
 

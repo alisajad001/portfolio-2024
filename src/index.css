@@ -8,7 +8,7 @@
 }
 
 :root {
-  --primary-color: #5a0cb3;
+  --primary-color: #6628d7;
   --secondary-color: #0f8ae2;
   --light: #f9f8fa;
   --dark: #041120;
@@ -43,6 +43,45 @@ h4 {
 
 ul {
   list-style-type: none;
+}
+
+.txt-primary {
+  color: var(--primary-color);
+}
+
+/* Animations */
+.mouse-animation {
+  width: 30px;
+  height: 50px;
+  border: 1px solid var(--light);
+  border-radius: 15px;
+  position: relative;
+  opacity: 0.8;
+}
+
+.mouse-animation::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: var(--light);
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  animation: slideIn 1s ease infinite;
+}
+
+@keyframes slideIn {
+  0% {
+    top: 10px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 28px;
+    opacity: 1;
+  }
 }
 
 /* Header */
@@ -93,4 +132,59 @@ ul {
 .navbar__list li {
   font-weight: 600;
   color: var(--dark);
+}
+
+/* Home */
+#home {
+  height: 100vh;
+  background: url("./assets/home-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+#home .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home .home_title {
+  font-size: 3.4rem;
+  color: var(--light);
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+#home p {
+  font-size: 1.3rem;
+  color: var(--light);
+  line-height: 1.6;
+  margin: 1.5rem 0;
+  max-width: 45rem;
+}
+
+#home button {
+  margin-top: 1rem;
+  height: 3.5rem;
+  background-color: var(--light);
+  color: var(--primary-color);
+  border: 0;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+#home button a {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+}
+
+#home button:hover {
+  transform: translateY(-5px);
+}
+
+#home .mouse-animation {
+  top: 100px;
 }

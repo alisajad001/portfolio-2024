@@ -1,3 +1,13 @@
+import Navbar from './sections/Navbar';
+import Home from './sections/Home';
+import Footer from './sections/Footer';
+
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <Navbar />
+      <Home />
+      <Footer />
+    </>
+  );
 }

@@ -28,8 +28,10 @@ function Navbar() {
             href={link.href}
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
-            className={`text-gray-600 hover:text-gray-800 transition duration-500 text-lg font-semibold antialiased lowercase ${
-              hoverIndex !== null && hoverIndex !== index ? 'text-gray-300' : ''
+            className={`hover:text-gray-800 transition duration-500 text-lg font-semibold antialiased lowercase ${
+              hoverIndex !== null && hoverIndex !== index
+                ? 'text-gray-300'
+                : 'text-gray-600'
             }`}
           >
             {link.text}.

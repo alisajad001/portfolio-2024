@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: 'Inter', sans-serif;
+  cursor: none;
+}
+
+/* Custom Cursor Style */
+.custom-cursor {
+  width: 15px;
+  height: 15px;
+  background-color: #000;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Text Animations */
+.animated-text {
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.animated-text:hover {
+  transform: translateY(-15px) rotate(-10deg);
+  color: rgb(79, 70, 229);
+}

@@ -20,6 +20,17 @@
   z-index: 9999;
 }
 
+/* Selection */
+::selection {
+  background-color: #f82b2b;
+  color: white;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* Text Animations */
 .animated-text {
   display: inline-block;

@@ -41,6 +41,10 @@ function Home() {
       <h1 className="text-4xl z-10 sm:text-5xl md:text-7xl lg:text-9xl uppercase font-black text-gray-950 antialiased leading-8">
         {letters.slice(0, 10)} <br /> {letters.slice(10, 20)}
       </h1>
+
+      <div className="w-5 h-8 sm:w-6 sm:h-10 border border-gray-500 rounded-full absolute bottom-10 flex justify-center pt-2">
+        <div className="w-[2px] h-2 bg-gray-800 animate-bounce rounded-full"></div>
+      </div>
     </main>
   );
 }

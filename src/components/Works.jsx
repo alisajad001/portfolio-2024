@@ -1,34 +1,24 @@
-import { useState } from 'react';
-
 const worksData = [
   {
     id: 1,
     title: 'Weather Application',
     tools: ['React', 'Tailwind'],
     image: '/images/weather-app.png',
+    url: 'https://weather-app0093.netlify.app',
   },
   {
     id: 2,
     title: 'Cinema MDB',
     tools: ['React', 'Tailwind'],
     image: '/images/cinema-mdb.png',
+    url: 'https://cinemamdb.netlify.app',
   },
   {
     id: 3,
     title: 'Simple Todo App',
     tools: ['React', 'Tailwind'],
     image: '/images/todo-app.png',
-  },
-  {
-    id: 4,
-    title: 'Quote Generator',
-    tools: ['JavaScript', 'CSS'],
-    image: '/images/quote-generator.png',
-  },
-  {
-    id: 5,
-    title: 'University Finder',
-    tools: ['JavaScript', 'CSS'],
+    url: 'https://todo-app0093.netlify.app',
   },
 ];
 
@@ -45,7 +35,9 @@ export default function Works() {
           return (
             <a
               key={work.id}
-              href="#"
+              href={work.url || '#'}
+              target="_blank"
+              rel="noreferrer"
               className="relative border-t text-xl md:text-3xl lg:text-6xl py-5 md:py-10 group hover:text-rose-500 transition-all"
             >
               <div className="flex justify-between items-center">

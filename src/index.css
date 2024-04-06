@@ -22,6 +22,8 @@
 
 * {
   font-family: 'MyFont', sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 body {

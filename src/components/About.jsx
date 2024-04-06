@@ -10,7 +10,9 @@ export default function About() {
         movies.
       </p>
 
-      <Button>Get in touch</Button>
+      <a href="#contact">
+        <Button>Get in touch</Button>
+      </a>
     </section>
   );
 }

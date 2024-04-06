@@ -9,8 +9,13 @@ export default function Contact() {
       <h2 className="text-3xl sm:text-5xl md:text-7xl max-w-3xl font-medium text-gray-900">
         Let's talk about your stunning Idea and make it real.
       </h2>
-
-      <Button>Send an email</Button>
+      <a
+        href="https://linkedin.com/in/alisajad001"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Button>Get in touch</Button>
+      </a>
     </section>
   );
 }

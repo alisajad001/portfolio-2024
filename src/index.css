@@ -1,9 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap');
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public/font/PPMori-Extralight.otf') format('opentype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public/font/PPMori-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public/font/PPMori-SemiBold.otf') format('opentype');
+  font-weight: 600;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: 'MyFont', sans-serif;
 }

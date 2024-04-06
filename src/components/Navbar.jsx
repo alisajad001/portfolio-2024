@@ -5,7 +5,7 @@ export default function Navbar() {
         Ali Sajad.
       </a>
       <nav>
-        <ul className="flex flex-col sm:flex-row gap-6">
+        <ul className="flex flex-col sm:flex-row gap-6 font-extralight">
           <li>
             <a href="#">About</a>
           </li>

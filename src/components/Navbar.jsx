@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <header className="flex items-center container mx-auto p-6 justify-between">
+    <header className="flex items-center container mx-auto px-6 py-10 justify-between">
       <a href="#" className="hidden sm:block">
         Ali Sajad.
       </a>

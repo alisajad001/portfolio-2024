@@ -1,3 +1,18 @@
+const links = [
+  {
+    name: 'About',
+    url: '#about',
+  },
+  {
+    name: 'Works',
+    url: '#works',
+  },
+  {
+    name: 'Contact',
+    url: '#contact',
+  },
+];
+
 export default function Navbar() {
   return (
     <header className="flex items-center container mx-auto px-6 py-10 justify-between">
@@ -6,15 +21,18 @@ export default function Navbar() {
       </a>
       <nav>
         <ul className="flex flex-col sm:flex-row gap-6 font-extralight">
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#works">Works</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          {links.map((link, index) => {
+            return (
+              <li key={index}>
+                <a
+                  href={`${link.url}`}
+                  className="hover:text-rose-500 transition"
+                >
+                  {link.name}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </header>

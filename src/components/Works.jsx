@@ -1,6 +1,6 @@
 export default function Works() {
   return (
-    <section className="container mx-auto p-6 my-32">
+    <section id="works" className="container mx-auto p-6 my-32">
       <h2 className="text-3xl md:text-4xl font-medium text-gray-900">Works</h2>
       <p className="text-gray-500 font-extralight mt-2">
         Here are some of my recent projects.

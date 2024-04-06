@@ -1,3 +1,30 @@
+const worksData = [
+  {
+    title: 'Weather Application',
+    tools: ['React', 'Tailwind'],
+    image: '/images/weather-app.png',
+  },
+  {
+    title: 'Cinema MDB',
+    tools: ['React', 'Tailwind'],
+    image: '/images/cinema-mdb.png',
+  },
+  {
+    title: 'Simple Todo App',
+    tools: ['React', 'Tailwind'],
+    image: '/images/todo-app.png',
+  },
+  {
+    title: 'Quote Generator',
+    tools: ['JavaScript', 'CSS'],
+    image: '/images/quote-generator.png',
+  },
+  {
+    title: 'University Finder',
+    tools: ['JavaScript', 'CSS'],
+  },
+];
+
 export default function Works() {
   return (
     <section id="works" className="container mx-auto p-6 my-32">
@@ -7,36 +34,22 @@ export default function Works() {
       </p>
 
       <div className="flex flex-col mt-6">
-        <a
-          href="#"
-          className="border-t text-xl md:text-3xl lg:text-6xl py-5 md:py-10"
-        >
-          <div className="flex justify-between items-center">
-            <h3>Weather Application</h3>
-            <span className="w-3 h-3 rounded-full bg-gray-950"></span>
-          </div>
-          <p className="text-sm text-gray-500">React, Tailwind</p>
-        </a>
-        <a
-          href="#"
-          className="border-t text-xl md:text-3xl lg:text-6xl py-5 md:py-10"
-        >
-          <div className="flex justify-between items-center">
-            <h3>Cinema MDB</h3>
-            <span className="w-3 h-3 rounded-full bg-gray-950"></span>
-          </div>
-          <p className="text-sm text-gray-500">React, Tailwind</p>
-        </a>
-        <a
-          href="#"
-          className="border-t text-xl md:text-3xl lg:text-6xl py-5 md:py-10"
-        >
-          <div className="flex justify-between items-center">
-            <h3>Simple Todo App</h3>
-            <span className="w-3 h-3 rounded-full bg-gray-950"></span>
-          </div>
-          <p className="text-sm text-gray-500">React, Tailwind</p>
-        </a>
+        {worksData.map((work) => {
+          return (
+            <>
+              <a
+                href="#"
+                className="border-t text-xl md:text-3xl lg:text-6xl py-5 md:py-10"
+              >
+                <div className="flex justify-between items-center">
+                  <h3>{work.title}</h3>
+                  <span className="w-3 h-3 rounded-full bg-gray-950"></span>
+                </div>
+                <p className="text-sm text-gray-500">{work.tools.join(', ')}</p>
+              </a>
+            </>
+          );
+        })}
       </div>
     </section>
   );

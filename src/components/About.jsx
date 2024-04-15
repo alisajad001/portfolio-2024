@@ -14,8 +14,8 @@ export default function About() {
         movies.
       </p>
 
-      <a href="#contact">
-        <Button>Get in touch</Button>
+      <a href="https://drive.google.com/file/d/1OnUzRpPsMYUv0QL8sDymoLDxlSIDCzlV/view?usp=drive_link">
+        <Button>See Resume</Button>
       </a>
     </section>
   );
